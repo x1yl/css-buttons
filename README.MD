@@ -4,7 +4,7 @@ Css Buttons is a collection of free, ready-to-use CSS button styles.
 
 Easily browse, copy the CSS, and use it in your projects. No hassle, no cost, just great button designs for everyone!
 
-Features
+## Features
 
 - Free to Use: No fees, no subscriptions—just grab the CSS.
 - Easy Copy & Paste: Quickly integrate buttons into your projects.
