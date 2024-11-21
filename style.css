@@ -3,9 +3,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0%;
+  min-height: 100vh;
+  margin: 0;
 }
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 10vh;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 600px;
+  justify-content: center;
+}
+
+
 
 #button {
   background-image: linear-gradient(#f7f8fa, #e7e9ec);
@@ -532,8 +549,8 @@ body {
   position: relative;
   padding: 20px 40px;
   font-size: 18px;
-  color: #ffffff; /* Brighter yellow */
-  font-weight: 600; /* Make text bolder */
+  color: #ffffff; 
+  font-weight: 600;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   background: linear-gradient(45deg, #0b0033, #3f0071);
   background-size: 200% 200%;
@@ -549,8 +566,8 @@ body {
 #button7 span {
   display: block;
   animation: textPulse 2s ease-in-out infinite;
-  color: #ffffff; /* Set the text color to the brighter yellow */
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Reduce the glow effect */
+  color: #ffffff; 
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
 }
 
 @keyframes defaultFloat {
@@ -618,12 +635,6 @@ body {
   z-index: 1;
 }
 
-#button7 span {
-  display: block;
-  animation: textPulse 2s ease-in-out infinite;
-}
-
-/* Hover Effects */
 #button7:hover {
   transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) scale(1.1);
   box-shadow: 0 0 30px #bc13fe, 0 0 60px #bc13fe, 0 0 90px #bc13fe;
@@ -701,6 +712,50 @@ body {
     transform: translate(0);
     opacity: 0.9;
   }
+}
+
+#button8 {
+  background: linear-gradient(45deg, #ff00aa, #00ffcc);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  animation: neonPulse8 2s infinite;
+}
+
+@keyframes neonPulse8 {
+  0%, 100% { box-shadow: 0 0 15px #ff00aa; }
+  50% { box-shadow: 0 0 30px #00ffcc; }
+}
+
+#button9 {
+  background: linear-gradient(90deg, #6600ff, #ff0066);
+  padding: 15px 30px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  color: white;
+  animation: cosmicSpin9 3s linear infinite;
+}
+
+@keyframes cosmicSpin9 {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+#button10 {
+  background: linear-gradient(-45deg, #00ffff, #ff00ff);
+  padding: 15px 30px;
+  border: none;
+  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+  color: white;
+  animation: crystalMorph10 4s ease infinite;
+}
+
+@keyframes crystalMorph10 {
+  0%, 100% { clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%); }
+  50% { clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%, 20% 50%, 0 20%); }
 }
 
 footer {

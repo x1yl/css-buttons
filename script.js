@@ -41,8 +41,7 @@ document.querySelectorAll("button").forEach((button) => {
           navigator.clipboard
             .writeText(buttonCss)
             .then(function () {
-              console.log(buttonCss);
-              alert("CSS copied to clipboard!");
+              alert("CSS copied to clipboard!" + "\n\n" + buttonCss);
             })
             .catch(function (err) {
               console.error("Could not copy text: ", err);
