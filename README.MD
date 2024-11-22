@@ -1,6 +1,6 @@
-# CSS Buttons
+# Awesome Button Css
 
-Css Buttons is a collection of free, ready-to-use CSS button styles.
+Awesome Button Css is a collection of free, ready-to-use CSS button styles.
 
 Easily browse, copy the CSS, and use it in your projects. No hassle, no cost, just great button designs for everyone!
 

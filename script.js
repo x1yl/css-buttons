@@ -1,7 +1,7 @@
 document.querySelectorAll("button").forEach((button) => {
   button.addEventListener("click", function () {
     const buttonId = this.id;
-    fetch("style.css")
+    fetch("button.css")
       .then((response) => response.text())
       .then((cssContent) => {
         const regex = new RegExp(`#${buttonId}(\\s|:)[^}]*}`, "g");
@@ -21,7 +21,6 @@ document.querySelectorAll("button").forEach((button) => {
 
             let allKeyframes = "";
             foundAnimations.forEach((animName) => {
-              console.log("Processing animation:", animName);
               const keyframesRegex = new RegExp(
                 `@keyframes\\s+${animName}[^#@]*}`,
                 "g"
@@ -41,7 +40,7 @@ document.querySelectorAll("button").forEach((button) => {
           navigator.clipboard
             .writeText(buttonCss)
             .then(function () {
-              alert("CSS copied to clipboard!" + "\n\n" + buttonCss);
+              alert("CSS copied to clipboard!");
             })
             .catch(function (err) {
               console.error("Could not copy text: ", err);
