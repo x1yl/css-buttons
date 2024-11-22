@@ -14,4 +14,4 @@ Easily browse, copy the CSS, and use it in your projects. No hassle, no cost, ju
 
 ## Screenshots
 
-![Website Screenshot](https://cloud-h50xior4l-hack-club-bot.vercel.app/0image.png)
+![Website Screenshot](https://cloud-oss1scz8u-hack-club-bot.vercel.app/0image.png)
